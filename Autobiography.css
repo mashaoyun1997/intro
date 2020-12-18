@@ -9,15 +9,20 @@ body {
     background-color: black;
 }
 
-header .row {
-    width: 100%;
+header .wraptherow{
+    display: flex;
+    justify-content: center;
+}
+
+header .row{
+    width: 80%;
     height: 100px;
     box-sizing: border-box;
-    padding: 0 8rem;
+    display: flex;
+    align-items: center;
     position: fixed;
     z-index: 1;
 }
-
 .nav-left .logo {
     width: 200px;
 }
@@ -110,26 +115,17 @@ footer .title {
     margin-bottom: 1.2rem;
     font-weight: 300;
 }
-
-footer .copyright {
-    /*rolling*/
-    color: rgb(114, 112, 112);
-    background-color: black;
+footer .wrapthecopyright{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width:576px) {
-    header .row {
+    header .wraptherow{
+        width: 100%;
         background-color: black;
-        /* margin-left: -30px; */
-    }
-    header div .logo{
-        margin-top: 20px;
-    }
-    header .nav-right{
-        margin-top: -30px;
-    }
-    header .row{
-        margin:  auto;
     }
     
     main .container-fluid .wrap-img{
@@ -140,6 +136,17 @@ footer .copyright {
         background-size: cover;
     }
     main .container-fluid {   
-        height: 1250px;  
+        height: 1600px;  
      }
+     footer .row{
+        display: inline-block;
+        justify-content: center;
+    }
+    footer .row .box{
+        box-sizing: border-box;
+        margin: 35px;
+    }
+    footer .copyright{
+        margin:0 auto;
+    }
 }
