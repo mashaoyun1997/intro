@@ -42,6 +42,10 @@ header .row{
     font-weight: 500;
 }
 
+main span{
+    font-size: 15px;
+}
+
 main .container-fluid {   
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(./images/iNTRO/birth.jpg) no-repeat;
     height: 1500px;
@@ -130,6 +134,7 @@ footer .wrapthecopyright{
     
     main .container-fluid .wrap-img{
         margin-top: 30px!important;
+        margin: 0 auto;
         width: 500px;
         height: 500px;
         background: url('./images/iNTRO/intro_headshot.png');
