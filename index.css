@@ -44,16 +44,56 @@ header .row {
     text-decoration: none;
 }
 
-main img{
-    padding-top: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.text span{
+    font-weight: 500;
+}
+
+main span{
+    font-size: 1rem;
+}
+
+main .container-fluid {   
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(./images/iNTRO/birth.jpg) no-repeat;
+    height: 1500px;
+    background-size: cover;
+    font-size: 0.9rem;
+    font-weight: 200;
+    color: #fff;  
+}
+
+main .container-fluid .wrap-img{
+    margin-top: -105px!important;
+    margin: 0 auto;
+    width: 60rem;
+    height: 60rem;
+    background: url('./images/iNTRO/intro_headshot.png');
+    background-size: cover;
 }
 
 
 
+main .container-fluid .title {
+    width: 100%;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
 
+main .container-fluid .wrap-text {
+    width: 100%;
+    word-break: break-all;
+}
+
+main .container-fluid .text {
+    margin: auto;
+    width: 80%;
+    font-size: 0.9rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1.6rem;
+    margin-top: -1rem;
+}
 
 footer {
     width: 100%;
@@ -93,8 +133,7 @@ footer .wrapthecopyright{
     justify-content: center;
 }
 
-
-@media (max-width:576px) { 
+@media (max-width:576px) {
     header .logo {
         margin: 0 auto;
     }
@@ -104,10 +143,17 @@ footer .wrapthecopyright{
         background-color: black;
     }
 
-    main img{
-            width: 100%;
+    main .container-fluid .wrap-img{
+        margin-top: 30px!important;
+        margin: 0 auto;
+        width: 30rem;
+        height: 30rem;
+        background: url('./images/iNTRO/intro_headshot.png');
+        background-size: cover;
     }
-
+    main .container-fluid {   
+        height: 100rem;  
+     }
     footer .row{
         display: inline-block;
         justify-content: center;
@@ -120,6 +166,7 @@ footer .wrapthecopyright{
         margin:0 auto;
     }
 }
+
 @media (max-width:320px) {
     header .row {
         display: inline-block;
@@ -139,5 +186,25 @@ footer .wrapthecopyright{
         margin: 0.5rem;
         display: flex;
         justify-content: center;
+    }
+    main .container-fluid {   
+        height: 120rem;  
+     }
+
+    main .container-fluid .wrap-img{
+        margin-top: 40px!important;
+        margin: 0 auto;
+        width: 20rem;
+        height: 20rem;
+        background: url('./images/iNTRO/intro_headshot.png');
+        background-size: cover;
+    }
+    footer .wrapthecopyright{
+        margin-top: 1.5rem;
+        width: 50%;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 3rem;
     }
 }
