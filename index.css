@@ -166,7 +166,11 @@ footer .wrapthecopyright{
         margin:0 auto;
     }
 }
-
+@media (max-width:420px) {
+    main .container-fluid {   
+        height: 110rem;  
+     }
+}
 @media (max-width:320px) {
     header .row {
         display: inline-block;

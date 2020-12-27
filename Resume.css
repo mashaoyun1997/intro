@@ -120,6 +120,7 @@ footer .wrapthecopyright{
         margin:0 auto;
     }
 }
+
 @media (max-width:320px) {
     header .row {
         display: inline-block;
